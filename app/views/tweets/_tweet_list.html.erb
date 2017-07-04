@@ -1,0 +1,16 @@
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Tweet</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tweets.each do |tweet| %>
+      <tr>
+        <td><%= tweet.body %></td>
+        <td><%= tweet.user.username %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
