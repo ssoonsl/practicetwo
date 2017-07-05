@@ -1,0 +1,6 @@
+<h1>User: <%= @user.username %></h1>
+
+<% @tweets.each do |tweet| %>
+  <%= tweet.body %>
+  <%= tweet.created_at %>
+<% end %>

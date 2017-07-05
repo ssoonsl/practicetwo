@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   root 'tweets#index'
 
+  resources :user, only: [:show], param: :username
+
 end
