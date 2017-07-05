@@ -1,9 +1,14 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
+
       <h1>All Tweets</h1>
 
+      <%= button_to 'Create tweet', new_tweet_path, method: :get, class: "btn btn-default" %>
+
       <%= render partial: 'tweet_list' %>
+
+
     </div>
   </div>
 </div>
